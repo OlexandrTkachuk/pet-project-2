@@ -4,6 +4,8 @@ import Home from 'pages/Home/Home';
 // import Register from 'pages/Register/Register';
 
 const App = () => {
+  console.log('temishen');
+
   return (
     <>
       <Home />
