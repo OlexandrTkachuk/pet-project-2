@@ -15,6 +15,7 @@ const Home = () => {
         <SideBar />
         <Feed />
         <RightBar />
+        <div>Temishen</div>
       </div>
     </div>
   );
