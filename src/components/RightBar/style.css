@@ -1,5 +1,5 @@
 .rightBar {
-  flex: 3.5;
+  flex: 2.5;
 }
 
 .rightBarWrapper {
@@ -39,12 +39,13 @@
 }
 
 .rightBarTitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .rightBarInfo {
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -73,6 +74,9 @@
   flex-direction: column;
   margin-bottom: 20px;
   cursor: pointer;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
 }
 
 .rightBarFollowingImg {
@@ -80,6 +84,13 @@
   height: 100px;
   object-fit: cover;
   border-radius: 5px;
+  transform: scale(1);
+
+  transition: all 250ms ease;
+}
+
+.rightBarFollowingImg:hover {
+  transform: scale(1.05);
 }
 
 .rightBarFriend {
@@ -114,4 +125,13 @@
 .rightBarUsername {
   font-weight: 500;
   font-size: 18px;
+}
+
+.rightBarFollowingName {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.rightBarTitle {
+  text-align: center;
 }

@@ -15,7 +15,8 @@ body,
 h1,
 h2,
 h3,
-h4 p,
+h4,
+p,
 ul[class],
 ol[class],
 li,
@@ -34,6 +35,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
