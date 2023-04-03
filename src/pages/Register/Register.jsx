@@ -1,3 +1,4 @@
+import { NavLink, Link } from 'react-router-dom';
 import './style.css';
 
 const Register = () => {
@@ -5,7 +6,9 @@ const Register = () => {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Aki Temmui Social</h3>
+          <Link to="/" className="logoLink">
+            <h3 className="loginLogo">Aki Temmui Social</h3>
+          </Link>
           <span className="loginDesc">
             Connect with friends and the world around you on Aki Temmui Social.
           </span>
@@ -26,9 +29,11 @@ const Register = () => {
               Sign Up
             </button>
 
-            <button type="button" className="loginRegisterButton">
-              Log into Account
-            </button>
+            <NavLink to="/login" className="registerButtonContainer">
+              <button type="button" className="loginRegisterButton">
+                Log into Account
+              </button>
+            </NavLink>
           </form>
         </div>
       </div>

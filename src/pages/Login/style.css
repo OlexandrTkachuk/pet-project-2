@@ -87,3 +87,14 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+.loginButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoLink {
+  text-decoration: none;
+}

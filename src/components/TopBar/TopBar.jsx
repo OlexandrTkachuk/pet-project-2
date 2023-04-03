@@ -1,3 +1,6 @@
+// navigation
+import { Link } from 'react-router-dom';
+
 // icons
 import { FaSearch } from 'react-icons/fa';
 import { BsFillPersonFill, BsFillChatDotsFill } from 'react-icons/bs';
@@ -13,7 +16,9 @@ const TopBar = () => {
   return (
     <div className="topBarContainer">
       <div className="topBarLeft">
-        <span className="logo">Aki Temmui social</span>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <span className="logo">Aki Temmui social</span>
+        </Link>
       </div>
 
       <div className="topBarCenter">
@@ -50,7 +55,9 @@ const TopBar = () => {
           </div>
         </div>
 
-        <img src={profileImage} alt="" className="topBarImg" />
+        <Link to="/profile/:username">
+          <img src={profileImage} alt="" className="topBarImg" />
+        </Link>
       </div>
     </div>
   );
